@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 function App() {
   const [name, setName] = useState("");
 
+  // Проблема: бесконечный цикл
   // const [renderCount, setRenderCount] = useState(1);
   // useEffect(() => {
   //   setRenderCount((prev) => prev + 1);
