@@ -23,7 +23,9 @@ export function TracksProvider({ children }) {
   }, []);
 
   return (
-    <TracksContext.Provider value={{ trackList, header }}>
+    <TracksContext.Provider
+      value={{ trackList, header, setTrackList, setHeader }}
+    >
       {children}
     </TracksContext.Provider>
   );
